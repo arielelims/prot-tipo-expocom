@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPanorama EXPOCOM</title>
+    <style>
+
+        
+#contato {
+    text-align: center; 
+    padding: 30px 20px;
+    margin-bottom: 40px; 
+}
+
+#contato h2 {
+    text-align: center; 
+    margin-bottom: 25px;
+}
+
+#contato p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+    max-width: 700px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.contact-email {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-email a {
+    color: #aa00ff; 
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+
+.contact-email a:hover {
+    color: #0056b3; 
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    #Contato p {
+        font-size: 1em; 
+        padding: 0 10px; 
+    }
+
+    .contact-email {
+        font-size: 1.1em;
+    }
+}
+
+   
+
+
+.content-section {
+    max-width: 1000px; 
+    margin: 40px auto; 
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    text-align: left; 
+}
+
+.content-section h2 {
+    font-size: 2.2em; 
+    color: #2c3e50; 
+    margin-top: 0; 
+    margin-bottom: 25px; 
+    text-align: left; 
+}
+
+
+.ranking {
+    width: 90%; 
+    margin: 30px auto; 
+    border-collapse: collapse; 
+    text-align: left; 
+    font-size: 0.95em; 
+}
+
+.ranking th, .ranking td {
+    border: 1px solid #ddd;
+    padding: 12px 15px; 
+}
+
+.ranking thead th {
+    background-color: #f2f2f2; 
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase; 
+    text-align: center; 
+}
+
+.ranking tbody tr:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+.ranking tbody tr:hover {
+    background-color: #f1f1f1; 
+}
+
+.ranking ul { 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.ranking ul li {
+    margin-bottom: 5px; 
+}
+
+
+.charts-section {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: flex-start; 
+    margin-top: 40px; 
+}
+
+
+.pie-chart-container {
+    flex: 1; 
+    min-width: 280px; 
+    max-width: 400px; 
+    margin: 20px; 
+    padding: 20px;
+    background-color: #fdfdfd; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center; 
+}
+
+.pie-chart-container h2 {
+    font-size: 1.8em; 
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+
+.pie-chart, .pie-chart-gender {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto; 
+    background-color: #eee;
+}
+
+
+.chart-legend {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-top: 15px;
+    padding-left: 20px; 
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.legend-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.chart-legend span {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.chart-note {
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 10px;
+    text-align: center; 
+}
+
+
+@media (max-width: 768px) {
+}
+    .content-section {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .content-section h2 {
+        text-align: center; 
+    }
+
+    .ranking {
+        width: 100%; 
+        font-size: 0.9em; 
+
+    .ranking th, .ranking td {
+        padding: 8px 10px; 
+    }
+
+    .charts-section {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .pie-chart-container {
+        width: 90%; 
+        margin: 15px auto; 
+    }
+}
+        
+        body {
+            text-align: center; 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+        }
+
+       
+        img {
+            height: 300px; 
+            width: auto; /
+            margin-bottom: 20px; 
+        }
+
+        
+        .container { 
+            background-color: white; 
+            border: 1px solid black; 
+            padding: 10px 20px; 
+            max-width: 800px; 
+            margin: 20px auto; 
+            border-radius: 5px; 
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+
+        
+        .principal ul {
+            list-style: none; 
+            padding: 0; 
+            margin: 0; 
+            display: flex;
+            justify-content: space-around; 
+            
+        }
+
+       
+        .principal li {
+            margin: 0 15px; 
+        }
+
+        
+        .principal a {
+            text-decoration: none; 
+            color: #333;
+            font-size: 16px; 
+            padding: 5px 0; 
+            display: block;
+            transition: color 0.3s ease; 
+        }
+
+        
+        .principal a:hover {
+            color: #c300ff; 
+        }
+
+      
+.container-projeto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    
+}
+
+.coluna-esquerda {
+    flex: 1;
+    min-width: 250px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    text-align: right; 
+}
+
+.coluna-direita {
+    flex: 2;
+    min-width: 300px;
+    box-sizing: border-box;
+    text-align: left; 
+}
+
+.container-projeto h2 {
+    font-size: 2.2em;
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.container-projeto p {
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .container-projeto {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .coluna-esquerda,
+    .coluna-direita {
+        padding-right: 0;
+        text-align: center; 
+        min-width: unset;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .coluna-esquerda {
+        margin-bottom: 20px;
+    }
+}
+
+
+#relatorio {
+    text-align: left; 
+    max-width: 1000px; 
+    margin: 40px auto; 
+    padding: 0 20px; 
+}
+
+#relatorio h2 {
+    text-align: left; 
+    color: #2c3e50;
+    margin-bottom: 20px; 
+}
+
+    #relatorio p {
+    text-align: justify; 
+    margin-left: 20px; 
+    margin-right: 20px; 
+    margin-bottom: 15px; 
+}
+
+
+    </style>
+</head>
+<body >
+    <img src="capa.png" alt="Titulo, panorama expocom nordeste 2025" height="300px">
+
+    <div class="container">
+        <nav class="principal">
+            <ul>
+                <li>
+                    <a href="#Inicio">Início</a>
+                </li>
+                <li>
+                    <a href="#relatorio">Relatório</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+
+    <div>
+        <section id="Sobre-o-projeto" class="container-projeto">
+    <div class="coluna-esquerda">
+        <h2>Sobre o</h2>
+        <h2>projeto</h2>
+    </div>
+    <div class="coluna-direita">
+        <p>O propósito central deste projeto é criar um panorama abrangente dos vencedores do EXPOCOM Nordeste em 2025. Este esforço serve a um duplo objetivo: primeiramente, se trata de um projeto de aprimoramento de habilidades em desenvolvimento front-end, visualização e organização de dados. Em segundo lugar, e de forma igualmente crucial, o projeto visa contribuir significativamente para o mapeamento e a análise da premiação.</p>
+        <p>Ao organizar os ganhadores por estado e universidade, e ao calcular a porcentagem de vencedores por gênero, bem como a proporção entre universidades públicas e particulares, o site busca oferecer uma ferramenta para compreender as tendências e o perfil dos premiados no evento.</p>
+    </div>
+</section>
+<section id="relatorio">
+            <h2>Relatório</h2>
+            <p>A análise revela um total de 65 vencedores identificados. Pernambuco (PE) lidera de forma significativa, com 20 vencedores, o que representa aproximadamente 30,77% do total de premiações.  Bahia (BA) e Ceará (CE) compartilham a segunda posição, cada um contribuindo com 11 vencedores. Isso corresponde a aproximadamente 16,92% das premiações para cada estado.  O Rio Grande do Norte (RN) ocupa a terceira posição com 10 vencedores, representando aproximadamente 15,38% do total.  Os outros estados acumulam a conquista de 20,01% dos prêmios. </p>
+
+    </div>
+
+    <div class="content-section">
+    <h2>Ranking dos Estados</h2>
+    <table class="ranking">
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>Vencedores</th>
+                <th>Universidades</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pernambuco (PE)</td>
+                <td>20</td>
+                <td>
+                    <ul>
+                        <li>Universidade Católica de Pernambuco (Unicap): 9</li>
+                        <li>Universidade Federal de Pernambuco (UFPE / UFPE Caruaru): 11</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Bahia (BA)</td>
+                <td>11</td>
+                <td>
+                    <ul>
+                        <li>Universidade Federal do Recôncavo da Bahia (UFRB): 2</li>
+                        <li>Universidade Estadual de Santa Cruz (Uesc): 5</li>
+                        <li>Universidade do Estado da Bahia (Uneb Juazeiro): 3</li>
+                        <li>Universidade Estadual do Sudoeste da Bahia (Uesb): 1</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Ceará (CE)</td>
+                <td>11</td>
+                <td>
+                    <ul>
+                        <li>Universidade de Fortaleza (Unifor): 5</li>
+                        <li>Universidade Federal do Ceará (UFC): 3</li>
+                        <li>Universidade Federal do Cariri (UFCA): 2</li>
+                        <li>Estácio FIC: 1</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte (RN)</td>
+                <td>10</td>
+                <td>
+                    <ul>
+                        <li>Universidade do Estado do Rio Grande do Norte (Uern / UERN): 7</li>
+                        <li>Universidade Federal do Rio Grande do Norte (UFRN): 2</li>
+                        <li>Instituto de Educação Superior do Rio Grande do Norte (IESRSA): 1</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Maranhão (MA)</td>
+                <td>5</td>
+                <td>
+                    <ul>
+                        <li>Universidade Federal do Maranhão (UFMA / UFMA Imperatriz): 5</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Paraíba (PB)</td>
+                <td>5</td>
+                <td>
+                    <ul>
+                        <li>Universidade Federal da Paraíba (UFPB): 3</li>
+                        <li>Universidade Estadual da Paraíba (UEPB): 2</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Sergipe (SE)</td>
+                <td>3</td>
+                <td>
+                    <ul>
+                        <li>Universidade Federal de Sergipe (UFS): 3</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="charts-section">
+        <div class="pie-chart-container">
+            <h2>Ganhadores por tipo de universidade</h2>
+            <div class="pie-chart" style="background: conic-gradient(#2a8692 75.38%, #a04590 75.38% 100%);"></div>
+            <div class="chart-legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #2a8692;"></div>
+                    <span>Públicas: 75,38%</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #a04590;"></div>
+                    <span>Particulares: 24,62%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pie-chart-container">
+            <h2>Distribuição por Gênero</h2>
+            <div class="pie-chart-gender" style="background: conic-gradient(#2a8692 64.62%, #a04590 64.62% 100%);"></div>
+            <div class="chart-legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #2a8692;"></div>
+                    <span>Feminino: 64,62% (42 vencedoras)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #a04590;"></div>
+                    <span>Masculino: 35,38% (23 vencedores)</span>
+                </div>
+            </div>
+            <p class="chart-note">*Análise baseada em onomástica comum brasileira - pode haver exceções</p>
+        </div>
+    </div>
+   <section id="contato">
+    <h2>Contato</h2>
+    <p>Para qualquer sinalização de erro nos dados, dúvidas sobre o processo de coleta ou sobre o conteúdo apresentado, por favor, entre em contato conosco através do e-mail:</p>
+    <p class="contact-email"><a href="mailto:arielelimajorn@gmail.com">arielelimajorn@gmail.com</a></p>
+    <p>Sua contribuição é muito importante para a melhoria e precisão do projeto.</p>
+</section>
+</div>
+</body>
+</html>
